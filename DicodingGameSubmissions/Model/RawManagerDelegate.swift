@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol GameManagerDelegate{
+protocol RawManagerDelegate{
     
     func didUpdateGame(_ gameManager : GameManager, game : GamesModels)
     func didFailWithError(error: Error)
@@ -16,7 +16,7 @@ protocol GameManagerDelegate{
 struct GameManager{
     let gameURL = "https://api.rawg.io/api/games"
     
-    var delegate: GameManagerDelegate?
+    var delegate: RawManagerDelegate?
     
     func fetchGames() {
         let urlString = "\(gameURL)"

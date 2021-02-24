@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPageView" customModule="DicodingSubmission" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPageView" customModule="DicodingGameSubmissions" customModuleProvider="target">
             <connections>
-                <outlet property="favoriteBtnDetail" destination="4m8-v6-JHQ" id="A6n-k9-Yja"/>
+<!--                <outlet property="favoriteBtnDetail" destination="4m8-v6-JHQ" id="A6n-k9-Yja"/>-->
                 <outlet property="gameDescription" destination="5Zl-Fq-Ifh" id="Ubq-8j-wPb"/>
                 <outlet property="gameDetailPoster" destination="KlK-cF-zUx" id="won-oq-KS9"/>
                 <outlet property="gameDetailRating" destination="h2c-0W-Mkb" id="NHR-fV-ZOp"/>
@@ -42,19 +43,19 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-image-cardview-game-poster" translatesAutoresizingMaskIntoConstraints="NO" id="KlK-cF-zUx" userLabel="Game Poster">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m8-v6-JHQ">
-                                    <rect key="frame" x="334" y="10" width="70" height="70"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="f3f-2Z-jcA"/>
-                                        <constraint firstAttribute="height" constant="70" id="wFk-RT-Jej"/>
-                                    </constraints>
-                                    <color key="tintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" image="not-favorited"/>
-                                    <state key="selected" image="favorited-star"/>
-                                    <connections>
-                                        <action selector="favoriteBtn:" destination="-1" eventType="touchUpInside" id="NVS-bl-kza"/>
-                                    </connections>
-                                </button>
+<!--                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m8-v6-JHQ">-->
+<!--                                    <rect key="frame" x="334" y="10" width="70" height="70"/>-->
+<!--                                    <constraints>-->
+<!--                                        <constraint firstAttribute="width" constant="70" id="f3f-2Z-jcA"/>-->
+<!--                                        <constraint firstAttribute="height" constant="70" id="wFk-RT-Jej"/>-->
+<!--                                    </constraints>-->
+<!--                                    <color key="tintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>-->
+<!--                                    <state key="normal" image="not-favorited"/>-->
+<!--                                    <state key="selected" image="favorited-star"/>-->
+<!--                                    <connections>-->
+<!--                                        <action selector="favoriteBtn:" destination="-1" eventType="touchUpInside" id="NVS-bl-kza"/>-->
+<!--                                    </connections>-->
+<!--                                </button>-->
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-FV-3KQ" userLabel="Back Button">
                                     <rect key="frame" x="8" y="8" width="50" height="50"/>
                                     <constraints>
@@ -70,7 +71,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="5DP-FV-3KQ" firstAttribute="top" secondItem="Sgc-ew-Ifc" secondAttribute="top" constant="8" id="AMm-fT-hfE"/>
                                 <constraint firstAttribute="trailing" secondItem="KlK-cF-zUx" secondAttribute="trailing" id="bIJ-lU-zzR"/>
@@ -87,22 +88,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.15000000596046448" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-cu-qOt">
-                                    <rect key="frame" x="10" y="10" width="126" height="32.333333333333336"/>
+                                    <rect key="frame" x="10.000000000000007" y="10" width="125.66666666666669" height="32.333333333333336"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXa-cN-fm1" userLabel="Ratings">
-                                    <rect key="frame" x="11" y="50.999999999999993" width="72" height="28.666666666666664"/>
+                                    <rect key="frame" x="11" y="50.999999999999993" width="68.666666666666671" height="28.666666666666664"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.15000000596046448" translatesAutoresizingMaskIntoConstraints="NO" id="h2c-0W-Mkb">
-                                            <rect key="frame" x="0.0" y="0.0" width="36" height="28.666666666666668"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="28.666666666666668"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BFb-sZ-heF">
-                                            <rect key="frame" x="36" y="0.33333333333333215" width="36" height="28.333333333333336"/>
+                                            <rect key="frame" x="34.333333333333329" y="-0.33333333333333215" width="34.333333333333329" height="28.333333333333332"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                     </subviews>
@@ -116,14 +117,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="deskripsi sedang dimuat ..." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-Fq-Ifh" userLabel="description text">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-Fq-Ifh" userLabel="description text">
                                     <rect key="frame" x="11" y="90.333333333333371" width="388" height="318.66666666666669"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="5Zl-Fq-Ifh" firstAttribute="top" secondItem="hJy-qM-pbv" secondAttribute="bottom" constant="14" id="0p6-D2-AhL"/>
                                 <constraint firstItem="WXa-cN-fm1" firstAttribute="top" secondItem="wsA-26-yt7" secondAttribute="top" constant="51.000000000000007" id="EtX-G6-dkm"/>
@@ -145,7 +146,8 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="y0g-se-tq6"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="trailing" secondItem="bQy-5d-Hge" secondAttribute="trailing" id="5Dl-yM-pbO"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="top" secondItem="bQy-5d-Hge" secondAttribute="top" id="5f1-xV-y2I"/>
@@ -159,16 +161,18 @@
                 <constraint firstItem="I0B-Hm-8Dk" firstAttribute="bottom" secondItem="y0g-se-tq6" secondAttribute="bottom" id="cPH-J8-wAe"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="leading" secondItem="bQy-5d-Hge" secondAttribute="leading" id="n5T-Uc-kEO"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="y0g-se-tq6"/>
             <point key="canvasLocation" x="79.710144927536234" y="-393.08035714285711"/>
         </view>
     </objects>
     <resources>
         <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
-        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
-        <image name="favorited-star" width="340" height="340"/>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+<!--        <image name="favorited-star" width="340" height="340"/>-->
         <image name="loading-image-cardview-game-poster" width="866" height="526"/>
         <image name="not-favorited" width="340" height="340"/>
-        <image name="star.fill" catalog="system" width="64" height="58"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

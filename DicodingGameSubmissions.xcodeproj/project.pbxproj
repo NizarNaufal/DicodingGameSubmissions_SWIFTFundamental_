@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7937B0CC25E54B15003E360D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B0CB25E54B15003E360D /* AppDelegate.swift */; };
 		7937B0CE25E54B15003E360D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B0CD25E54B15003E360D /* SceneDelegate.swift */; };
-		7937B0D025E54B15003E360D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B0CF25E54B15003E360D /* ContentView.swift */; };
 		7937B0D225E54B16003E360D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7937B0D125E54B16003E360D /* Assets.xcassets */; };
 		7937B0D525E54B16003E360D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7937B0D425E54B16003E360D /* Preview Assets.xcassets */; };
 		7937B0D825E54B16003E360D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7937B0D625E54B16003E360D /* LaunchScreen.storyboard */; };
@@ -22,6 +21,13 @@
 		7937B10A25E562F5003E360D /* ProfileCatalogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B10925E562F5003E360D /* ProfileCatalogue.swift */; };
 		7937B11025E56339003E360D /* DetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B10F25E56339003E360D /* DetailPage.swift */; };
 		7937B11825E5641B003E360D /* DetailPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7937B11725E5641B003E360D /* DetailPageView.xib */; };
+		79D7CC5525E6111E00A1F49A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D7CC5425E6111E00A1F49A /* ViewController.swift */; };
+		79D7CC5A25E6115900A1F49A /* RawTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D7CC5925E6115900A1F49A /* RawTableViewCell.swift */; };
+		79D7CC5E25E611A700A1F49A /* RawTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D7CC5D25E611A700A1F49A /* RawTableViewCell.xib */; };
+		79D7CC6325E6140E00A1F49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D7CC6125E6140E00A1F49A /* Main.storyboard */; };
+		79D7CC6825E614FF00A1F49A /* ProfileCatGue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D7CC6725E614FF00A1F49A /* ProfileCatGue.swift */; };
+		79D7CC6C25E6158400A1F49A /* ProfileCatGue.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D7CC6B25E6158400A1F49A /* ProfileCatGue.xib */; };
+		79D7CC7125E6213400A1F49A /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D7CC6F25E6213400A1F49A /* Launch.storyboard */; };
 		976670FAFB01779EA5E214AC /* Pods_DicodingGameSubmissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845CD037C521C343920D4D5C /* Pods_DicodingGameSubmissions.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +36,6 @@
 		7937B0C825E54B15003E360D /* DicodingGameSubmissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DicodingGameSubmissions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7937B0CB25E54B15003E360D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7937B0CD25E54B15003E360D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7937B0CF25E54B15003E360D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7937B0D125E54B16003E360D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7937B0D425E54B16003E360D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7937B0D725E54B16003E360D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +49,13 @@
 		7937B10925E562F5003E360D /* ProfileCatalogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCatalogue.swift; sourceTree = "<group>"; };
 		7937B10F25E56339003E360D /* DetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPage.swift; sourceTree = "<group>"; };
 		7937B11725E5641B003E360D /* DetailPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPageView.xib; sourceTree = "<group>"; };
+		79D7CC5425E6111E00A1F49A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79D7CC5925E6115900A1F49A /* RawTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawTableViewCell.swift; sourceTree = "<group>"; };
+		79D7CC5D25E611A700A1F49A /* RawTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RawTableViewCell.xib; sourceTree = "<group>"; };
+		79D7CC6225E6140E00A1F49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		79D7CC6725E614FF00A1F49A /* ProfileCatGue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCatGue.swift; sourceTree = "<group>"; };
+		79D7CC6B25E6158400A1F49A /* ProfileCatGue.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCatGue.xib; sourceTree = "<group>"; };
+		79D7CC7025E6213400A1F49A /* BaseLaunch */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BaseLaunch; path = Launch.storyboard; sourceTree = "<group>"; };
 		845CD037C521C343920D4D5C /* Pods_DicodingGameSubmissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DicodingGameSubmissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9922CDCBF0069C1DBB42F8FB /* Pods-DicodingGameSubmissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicodingGameSubmissions.release.xcconfig"; path = "Target Support Files/Pods-DicodingGameSubmissions/Pods-DicodingGameSubmissions.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +78,6 @@
 				5652F416C8DCAED4B36F155C /* Pods-DicodingGameSubmissions.debug.xcconfig */,
 				9922CDCBF0069C1DBB42F8FB /* Pods-DicodingGameSubmissions.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,13 +110,13 @@
 		7937B0CA25E54B15003E360D /* DicodingGameSubmissions */ = {
 			isa = PBXGroup;
 			children = (
+				79D7CC6E25E6210A00A1F49A /* BaseLaunch.lproj */,
 				7937B10E25E5632D003E360D /* View */,
 				7937B0F925E56041003E360D /* Model */,
 				7937B0E825E55E40003E360D /* Controller */,
 				7937B0E125E54B4A003E360D /* API */,
 				7937B0CB25E54B15003E360D /* AppDelegate.swift */,
 				7937B0CD25E54B15003E360D /* SceneDelegate.swift */,
-				7937B0CF25E54B15003E360D /* ContentView.swift */,
 				7937B0D125E54B16003E360D /* Assets.xcassets */,
 				7937B0D625E54B16003E360D /* LaunchScreen.storyboard */,
 				7937B0D925E54B16003E360D /* Info.plist */,
@@ -153,10 +164,56 @@
 		7937B10E25E5632D003E360D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				79D7CC6625E614EC00A1F49A /* profilecatalogue */,
+				79D7CC5325E610FC00A1F49A /* home */,
 				7937B10F25E56339003E360D /* DetailPage.swift */,
 				7937B11725E5641B003E360D /* DetailPageView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		79D7CC5325E610FC00A1F49A /* home */ = {
+			isa = PBXGroup;
+			children = (
+				79D7CC6025E613F500A1F49A /* Base.lproj */,
+				79D7CC5825E6113700A1F49A /* TableViewCell */,
+				79D7CC5425E6111E00A1F49A /* ViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		79D7CC5825E6113700A1F49A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				79D7CC5925E6115900A1F49A /* RawTableViewCell.swift */,
+				79D7CC5D25E611A700A1F49A /* RawTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		79D7CC6025E613F500A1F49A /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				79D7CC6125E6140E00A1F49A /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		79D7CC6625E614EC00A1F49A /* profilecatalogue */ = {
+			isa = PBXGroup;
+			children = (
+				79D7CC6725E614FF00A1F49A /* ProfileCatGue.swift */,
+				79D7CC6B25E6158400A1F49A /* ProfileCatGue.xib */,
+			);
+			path = profilecatalogue;
+			sourceTree = "<group>";
+		};
+		79D7CC6E25E6210A00A1F49A /* BaseLaunch.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				79D7CC6F25E6213400A1F49A /* Launch.storyboard */,
+			);
+			path = BaseLaunch.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +259,8 @@
 			knownRegions = (
 				en,
 				Base,
+				BaseLaunch,
+				baselaunch,
 			);
 			mainGroup = 7937B0BF25E54B15003E360D;
 			productRefGroup = 7937B0C925E54B15003E360D /* Products */;
@@ -218,10 +277,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D7CC6C25E6158400A1F49A /* ProfileCatGue.xib in Resources */,
 				7937B0D825E54B16003E360D /* LaunchScreen.storyboard in Resources */,
 				7937B0D525E54B16003E360D /* Preview Assets.xcassets in Resources */,
+				79D7CC7125E6213400A1F49A /* Launch.storyboard in Resources */,
+				79D7CC5E25E611A700A1F49A /* RawTableViewCell.xib in Resources */,
 				7937B11825E5641B003E360D /* DetailPageView.xib in Resources */,
 				7937B0D225E54B16003E360D /* Assets.xcassets in Resources */,
+				79D7CC6325E6140E00A1F49A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +343,10 @@
 				7937B0CC25E54B15003E360D /* AppDelegate.swift in Sources */,
 				7937B0FF25E5607B003E360D /* RawManagerDelegate.swift in Sources */,
 				7937B0CE25E54B15003E360D /* SceneDelegate.swift in Sources */,
-				7937B0D025E54B15003E360D /* ContentView.swift in Sources */,
+				79D7CC5525E6111E00A1F49A /* ViewController.swift in Sources */,
 				7937B10325E560E3003E360D /* GameModels.swift in Sources */,
+				79D7CC5A25E6115900A1F49A /* RawTableViewCell.swift in Sources */,
+				79D7CC6825E614FF00A1F49A /* ProfileCatGue.swift in Sources */,
 				7937B0EA25E55E73003E360D /* RawViewTable.swift in Sources */,
 				7937B0E325E54B76003E360D /* APIServiceRaw.swift in Sources */,
 				7937B10A25E562F5003E360D /* ProfileCatalogue.swift in Sources */,
@@ -297,6 +362,22 @@
 				7937B0D725E54B16003E360D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79D7CC6125E6140E00A1F49A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D7CC6225E6140E00A1F49A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79D7CC6F25E6213400A1F49A /* Launch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D7CC7025E6213400A1F49A /* BaseLaunch */,
+			);
+			name = Launch.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,9 +505,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DicodingGameSubmissions/Preview Content\"";
-				DEVELOPMENT_TEAM = 6K5MM965KY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DicodingGameSubmissions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = id.dicoding.learn.DicodingGameSubmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,9 +528,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DicodingGameSubmissions/Preview Content\"";
-				DEVELOPMENT_TEAM = 6K5MM965KY;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DicodingGameSubmissions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = id.dicoding.learn.DicodingGameSubmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

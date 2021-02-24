@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 import Nuke
-import RealmSwift
+
 
 class DetailPage: UIViewController {
     @IBOutlet weak var gameDetailPoster: UIImageView!
@@ -18,37 +18,17 @@ class DetailPage: UIViewController {
     @IBOutlet weak var gameDetailReleaseDate: UILabel!
     @IBOutlet weak var gameDescription: UITextView!
     @IBOutlet weak var favoriteBtnDetail: UIButton!
-    
-    //Database Realm
-     var favGames: Results<FavoriteGameData>?
-    
-    // Temporary Game Data
+  
     var game : GameModel?
     var gameDownloader = GameDownloaderManager()
-    let realm = try! Realm() //A Valid way according to documentation to declare Realm object althougt it use '!'
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationItem.setHidesBackButton(true, animated: true)
-        
-        favGames = realm.objects(FavoriteGameData.self)  // Ini untuk Load Data ke variable global
-        gameDownloader.delegate = self
-        
-        // implementing game's data into UI
+   
         if let result = game {
-            
-            //checking if games is favorited
-            if favGames != nil{
-                for item in favGames!{
-                    if item.id == result.id{
-                        favoriteBtnDetail.isSelected = true
-                        favoriteBtnDetail.imageView?.image = UIImage(named: "favorited-star")
-                    }
-                }
-            }
-
             let url = URL(string : result.poster)!
             let request = ImageRequest(
                 url: url,
@@ -69,73 +49,10 @@ class DetailPage: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func favoriteBtn(_ sender: UIButton) {
-        favoriteBtnController(sender: sender)
-    }
-    
-    func favoriteBtnController(sender : UIButton){
-        if(sender.isSelected == false){
-            
-            favoriteBtnDetail.imageView?.image = UIImage(named: "favorited-star")
-            sender.isSelected = true
-        
-            let favoritedGame = FavoriteGameData()
-            favoritedGame.id = game!.id
-            favoritedGame.title = String(game!.title)
-            favoritedGame.poster = String(game!.poster)
-            favoritedGame.releasedDate = String(game!.releasedDate)
-            favoritedGame.rating = String(game!.rating)
-            saveFavoriteGames(favGame: favoritedGame)
-            
-            let alert = UIAlertController(title: "Notes", message: "Game has been added to favorite", preferredStyle: .alert)
-            self.present(alert, animated: true) {
-                alert.view.superview?.isUserInteractionEnabled = true
-                alert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.alertControllerBackgroundTapped)))
-            }
-            
-        }else if(sender.isSelected == true){
-            favoriteBtnDetail.imageView?.image = UIImage(named: "not-favorited")
-            sender.isSelected = false
-            
-            deleteFavoriteGames()
-            
-            let alert = UIAlertController(title: "Notes", message: "Game has been removed from favorite", preferredStyle: .alert)
-            self.present(alert, animated: true) {
-                alert.view.superview?.isUserInteractionEnabled = true
-                alert.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.alertControllerBackgroundTapped)))
-            }
-        }
-    }
-    
     @objc func alertControllerBackgroundTapped()
     {
         self.dismiss(animated: true, completion: nil)
     }
-
-    
-    func saveFavoriteGames(favGame : FavoriteGameData){
-        do {
-            try realm.write{
-                realm.add(favGame) //WITH REALM TO SAVE DATA
-            }
-        } catch  {
-            print(error)
-        }
-    }
-    
-    func deleteFavoriteGames(){
-           do {
-               try realm.write{
-                for item in realm.objects(FavoriteGameData.self){
-                    if(item.id == game!.id){
-                        realm.delete(item) // ini untuk delete, TETAP HARUS ADA DI DALAM realm.write
-                    }
-                }
-               }
-           } catch  {
-               print(error)
-           }
-       }
     
     func parseDate(dateUnformatted: String)-> String{
         
@@ -229,7 +146,7 @@ struct GameDownloaderManager{
     }
 }
 
-extension DetailGameViewController : GameDownloaderDelegate{
+extension DetailPage : GameDownloaderDelegate{
     func didGameDownloaded(_ gameManager: GameDownloaderManager, game: GameDataById) {
         DispatchQueue.main.async() {
             let editedText = game.description.replacingOccurrences(of: "<p>", with: "\n")

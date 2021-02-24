@@ -6,7 +6,7 @@ target 'DicodingGameSubmissions' do
   use_frameworks!
 
   # Pods for DicodingGameSubmissions
-  
-   pod 'Nuke', '~> 7.0'
+
+     pod 'Nuke', '~> 7.0'
 
 end
