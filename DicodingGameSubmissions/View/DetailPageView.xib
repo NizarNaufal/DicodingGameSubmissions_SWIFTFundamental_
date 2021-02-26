@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPageView" customModule="DicodingGameSubmissions" customModuleProvider="target">
             <connections>
-<!--                <outlet property="favoriteBtnDetail" destination="4m8-v6-JHQ" id="A6n-k9-Yja"/>-->
                 <outlet property="gameDescription" destination="5Zl-Fq-Ifh" id="Ubq-8j-wPb"/>
                 <outlet property="gameDetailPoster" destination="KlK-cF-zUx" id="won-oq-KS9"/>
                 <outlet property="gameDetailRating" destination="h2c-0W-Mkb" id="NHR-fV-ZOp"/>
@@ -43,19 +42,6 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-image-cardview-game-poster" translatesAutoresizingMaskIntoConstraints="NO" id="KlK-cF-zUx" userLabel="Game Poster">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                                 </imageView>
-<!--                                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m8-v6-JHQ">-->
-<!--                                    <rect key="frame" x="334" y="10" width="70" height="70"/>-->
-<!--                                    <constraints>-->
-<!--                                        <constraint firstAttribute="width" constant="70" id="f3f-2Z-jcA"/>-->
-<!--                                        <constraint firstAttribute="height" constant="70" id="wFk-RT-Jej"/>-->
-<!--                                    </constraints>-->
-<!--                                    <color key="tintColor" red="0.1570815146" green="0.15706741809999999" blue="0.1650215387" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>-->
-<!--                                    <state key="normal" image="not-favorited"/>-->
-<!--                                    <state key="selected" image="favorited-star"/>-->
-<!--                                    <connections>-->
-<!--                                        <action selector="favoriteBtn:" destination="-1" eventType="touchUpInside" id="NVS-bl-kza"/>-->
-<!--                                    </connections>-->
-<!--                                </button>-->
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-FV-3KQ" userLabel="Back Button">
                                     <rect key="frame" x="8" y="8" width="50" height="50"/>
                                     <constraints>
@@ -117,7 +103,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-Fq-Ifh" userLabel="description text">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description Not Found" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-Fq-Ifh" userLabel="description text">
                                     <rect key="frame" x="11" y="90.333333333333371" width="388" height="318.66666666666669"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -151,10 +137,9 @@
             <constraints>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="trailing" secondItem="bQy-5d-Hge" secondAttribute="trailing" id="5Dl-yM-pbO"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="top" secondItem="bQy-5d-Hge" secondAttribute="top" id="5f1-xV-y2I"/>
-                <constraint firstItem="y0g-se-tq6" firstAttribute="trailing" secondItem="4m8-v6-JHQ" secondAttribute="trailing" constant="10" id="CeL-tP-ceV"/>
                 <constraint firstItem="I0B-Hm-8Dk" firstAttribute="leading" secondItem="y0g-se-tq6" secondAttribute="leading" id="H5T-Bh-f51"/>
                 <constraint firstItem="y0g-se-tq6" firstAttribute="trailing" secondItem="hJy-qM-pbv" secondAttribute="trailing" constant="15" id="P8J-u9-5aR"/>
-                <constraint firstItem="4m8-v6-JHQ" firstAttribute="top" secondItem="y0g-se-tq6" secondAttribute="top" constant="10" id="UVn-6V-2UE"/>
+                <constraint firstAttribute="top" secondItem="y0g-se-tq6" secondAttribute="top" constant="10" id="UVn-6V-2UE"/>
                 <constraint firstItem="jS8-bA-Wn4" firstAttribute="bottom" secondItem="bQy-5d-Hge" secondAttribute="bottom" id="Zj6-l5-abW"/>
                 <constraint firstItem="y0g-se-tq6" firstAttribute="top" secondItem="I0B-Hm-8Dk" secondAttribute="top" id="aOz-bz-yfU"/>
                 <constraint firstItem="I0B-Hm-8Dk" firstAttribute="trailing" secondItem="y0g-se-tq6" secondAttribute="trailing" id="aSa-Ag-BfW"/>
@@ -167,9 +152,7 @@
     <resources>
         <image name="Game-App-iOS-Dark-Grey-BG" width="647" height="916"/>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
-<!--        <image name="favorited-star" width="340" height="340"/>-->
         <image name="loading-image-cardview-game-poster" width="866" height="526"/>
-        <image name="not-favorited" width="340" height="340"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
